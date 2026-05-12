@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS bundles (
+    id INTEGER PRIMARY KEY,
+    bundle TEXT NOT NULL
+);

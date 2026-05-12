@@ -1,0 +1,653 @@
+{
+   "resourceType": "Bundle",
+   "id": "8a14dfa2-d4d9-4c74-b87e-4430456be4e3",
+   "meta": {
+      "lastUpdated": "2025-11-12T12:10:07.068+00:00"
+   },
+   "type": "searchset",
+   "total": 51,
+   "link": [
+      {
+         "relation": "first",
+         "url": "https://sandbox.bluebutton.cms.gov/v2/fhir/ExplanationOfBenefit?_format=application%2Ffhir%2Bjson&startIndex=0&_count=10&patient=-10000010254653"
+      },
+      {
+         "relation": "previous",
+         "url": "https://sandbox.bluebutton.cms.gov/v2/fhir/ExplanationOfBenefit?_format=application%2Ffhir%2Bjson&startIndex=40&_count=10&patient=-10000010254653"
+      },
+      {
+         "relation": "last",
+         "url": "https://sandbox.bluebutton.cms.gov/v2/fhir/ExplanationOfBenefit?_format=application%2Ffhir%2Bjson&startIndex=50&_count=10&patient=-10000010254653"
+      },
+      {
+         "relation": "self",
+         "url": "https://sandbox.bluebutton.cms.gov/v2/fhir/ExplanationOfBenefit/?_count=10&_format=application%2Ffhir%2Bjson&patient=-10000010254653&startIndex=50"
+      }
+   ],
+   "entry": [
+      {
+         "resource": {
+            "resourceType": "ExplanationOfBenefit",
+            "id": "pde--10602140436",
+            "meta": {
+               "lastUpdated": "2023-06-14T16:35:28.423+00:00",
+               "profile": [
+                  "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
+               ]
+            },
+            "identifier": [
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                           "code": "uc",
+                           "display": "Unique Claim ID"
+                        }
+                     ]
+                  },
+                  "system": "https://bluebutton.cms.gov/resources/variables/pde_id",
+                  "value": "-10602140436"
+               },
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                           "code": "uc",
+                           "display": "Unique Claim ID"
+                        }
+                     ]
+                  },
+                  "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+                  "value": "-1632178535"
+               },
+               {
+                  "type": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                           "code": "uc",
+                           "display": "Unique Claim ID"
+                        }
+                     ]
+                  },
+                  "system": "https://bluebutton.cms.gov/resources/variables/rx_srvc_rfrnc_num",
+                  "value": "-10602140436"
+               }
+            ],
+            "status": "active",
+            "type": {
+               "coding": [
+                  {
+                     "system": "https://bluebutton.cms.gov/resources/codesystem/eob-type",
+                     "code": "PDE"
+                  },
+                  {
+                     "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                     "code": "pharmacy",
+                     "display": "Pharmacy"
+                  }
+               ]
+            },
+            "use": "claim",
+            "patient": {
+               "reference": "Patient/-10000010254653"
+            },
+            "billablePeriod": {
+               "start": "2016-04-28",
+               "end": "2016-04-28"
+            },
+            "created": "2026-04-22T12:53:38+00:00",
+            "insurer": {
+               "identifier": {
+                  "value": "CMS"
+               }
+            },
+            "provider": {
+               "identifier": {
+                  "system": "http://hl7.org/fhir/sid/us-npi",
+                  "value": "010052"
+               }
+            },
+            "facility": {
+               "extension": [
+                  {
+                     "url": "https://bluebutton.cms.gov/resources/variables/phrmcy_srvc_type_cd",
+                     "valueCoding": {
+                        "system": "https://bluebutton.cms.gov/resources/variables/phrmcy_srvc_type_cd",
+                        "code": "05",
+                        "display": "Long-term care pharmacy"
+                     }
+                  }
+               ],
+               "identifier": {
+                  "type": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                           "code": "npi"
+                        }
+                     ]
+                  },
+                  "value": "010052"
+               }
+            },
+            "outcome": "complete",
+            "careTeam": [
+               {
+                  "sequence": 1,
+                  "provider": {
+                     "identifier": {
+                        "type": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+                                 "code": "npi",
+                                 "display": "National Provider Identifier"
+                              }
+                           ]
+                        },
+                        "value": "9999999539"
+                     }
+                  },
+                  "role": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole",
+                           "code": "prescribing",
+                           "display": "Prescribing provider"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "supportingInfo": [
+               {
+                  "sequence": 1,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                           "code": "refillnum",
+                           "display": "Refill Number"
+                        }
+                     ]
+                  },
+                  "valueQuantity": {
+                     "value": 1
+                  }
+               },
+               {
+                  "sequence": 2,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                           "code": "dayssupply",
+                           "display": "Days Supply"
+                        }
+                     ]
+                  },
+                  "valueQuantity": {
+                     "value": 90
+                  }
+               },
+               {
+                  "sequence": 3,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/drug_cvrg_stus_cd",
+                           "display": "Drug Coverage Status Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/drug_cvrg_stus_cd",
+                           "code": "C",
+                           "display": "Covered"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 4,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/daw_prod_slctn_cd",
+                           "display": "Dispense as Written (DAW) Product Selection Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/daw_prod_slctn_cd",
+                           "code": "0",
+                           "display": "No Product Selection Indicated (may also have missing values)"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 5,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/dspnsng_stus_cd",
+                           "display": "Dispensing Status Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/dspnsng_stus_cd"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 6,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/adjstmt_dltn_cd",
+                           "display": "Adjustment Deletion Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/adjstmt_dltn_cd"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 7,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/nstd_frmt_cd",
+                           "display": "Non-Standard Format Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/nstd_frmt_cd"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 8,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                           "code": "rxorigincode",
+                           "display": "Rx Origin Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/rx_orgn_cd",
+                           "code": "4",
+                           "display": "Facsimile"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 9,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
+                           "code": "brandgenericindicator",
+                           "display": "Brand Generic Indicator"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/brnd_gnrc_cd",
+                           "code": "B",
+                           "display": "Brand"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "sequence": 10,
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                           "code": "info",
+                           "display": "Information"
+                        },
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/codesystem/information",
+                           "code": "https://bluebutton.cms.gov/resources/variables/ptnt_rsdnc_cd",
+                           "display": "Patient Residence Code"
+                        }
+                     ]
+                  },
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "https://bluebutton.cms.gov/resources/variables/ptnt_rsdnc_cd",
+                           "code": "01",
+                           "display": "Home"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "insurance": [
+               {
+                  "focal": true,
+                  "coverage": {
+                     "extension": [
+                        {
+                           "url": "https://bluebutton.cms.gov/resources/variables/plan_cntrct_rec_id",
+                           "valueIdentifier": {
+                              "system": "https://bluebutton.cms.gov/resources/variables/plan_cntrct_rec_id",
+                              "value": "Z0008"
+                           }
+                        },
+                        {
+                           "url": "https://bluebutton.cms.gov/resources/variables/plan_pbp_rec_num",
+                           "valueIdentifier": {
+                              "system": "https://bluebutton.cms.gov/resources/variables/plan_pbp_rec_num",
+                              "value": "999"
+                           }
+                        }
+                     ],
+                     "reference": "Coverage/part-d--10000010254653"
+                  }
+               }
+            ],
+            "item": [
+               {
+                  "sequence": 1,
+                  "careTeamSequence": [
+                     1
+                  ],
+                  "productOrService": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/sid/ndc",
+                           "code": "12860027209"
+                        }
+                     ]
+                  },
+                  "servicedDate": "2016-04-28",
+                  "quantity": {
+                     "value": 90.0
+                  },
+                  "adjudication": [
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                                 "code": "benefit",
+                                 "display": "Benefit Amount"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/cvrd_d_plan_pd_amt",
+                                 "display": "Amount paid by Part D plan for the PDE (drug is covered by Part D)"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 13.93,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "coinsurance",
+                                 "display": "Co-insurance"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/gdc_blw_oopt_amt",
+                                 "display": "Gross Drug Cost Below Part D Out-of-Pocket Threshold (GDCB)"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 35.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "coinsurance",
+                                 "display": "Co-insurance"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/gdc_abv_oopt_amt",
+                                 "display": "Gross Drug Cost Above Part D Out-of-Pocket Threshold (GDCA)"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 0.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "paidbypatient",
+                                 "display": "Paid by patient"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/ptnt_pay_amt",
+                                 "display": "Amount Paid by Patient"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 35.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "priorpayerpaid",
+                                 "display": "Prior payer paid"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/othr_troop_amt",
+                                 "display": "Other True Out-of-Pocket (TrOOP) Amount"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 0.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "discount",
+                                 "display": "Discount"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/lics_amt",
+                                 "display": "Amount paid for the PDE by Part D low income subsidy"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 0.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "priorpayerpaid",
+                                 "display": "Prior payer paid"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/plro_amt",
+                                 "display": "Reduction in patient liability due to payments by other payers (PLRO)"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 0.0,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "drugcost",
+                                 "display": "Drug Cost"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/tot_rx_cst_amt",
+                                 "display": "Total drug cost (Part D)"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 48.93,
+                           "currency": "USD"
+                        }
+                     },
+                     {
+                        "category": {
+                           "coding": [
+                              {
+                                 "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                                 "code": "discount",
+                                 "display": "Discount"
+                              },
+                              {
+                                 "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                 "code": "https://bluebutton.cms.gov/resources/variables/rptd_gap_dscnt_num",
+                                 "display": "Gap Discount Amount"
+                              }
+                           ]
+                        },
+                        "amount": {
+                           "value": 0.0,
+                           "currency": "USD"
+                        }
+                     }
+                  ]
+               }
+            ],
+            "total": [
+               {
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+                           "code": "drugcost",
+                           "display": "Drug Cost"
+                        }
+                     ]
+                  },
+                  "amount": {
+                     "value": 48.93,
+                     "currency": "USD"
+                  }
+               },
+               {
+                  "category": {
+                     "coding": [
+                        {
+                           "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                           "code": "other",
+                           "display": "Other"
+                        }
+                     ]
+                  },
+                  "amount": {
+                     "value": 0,
+                     "currency": "USD"
+                  }
+               }
+            ],
+            "payment": {
+               "date": "2016-04-28"
+            }
+         }
+      }
+   ]
+}
