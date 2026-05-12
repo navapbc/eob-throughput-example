@@ -136,7 +136,7 @@ to quickly create a Cobra application.`,
 		avg := dur / time.Duration(rows)
 		// memDelta := endMem.Alloc - startMem.Alloc
 		if noisy {
-			fmt.Printf("concurrency,rows,bundle,writing,total time (ms),avg time (ms),alloc,totalalloc,sys,peak,numgc\n")
+			fmt.Printf("concurrency,rows,bundle,writing,total time (ms),avg time (us),alloc,totalalloc,sys,peak,numgc\n")
 		}
 		fmt.Printf("%d,%d,%d,%v,%d,%d,%d,%d,%d,%d,%d\n",
 			CONCURRENCY,
